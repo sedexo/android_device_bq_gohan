@@ -138,9 +138,10 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     ipacm
 
-# IRQ
+# QCOM Configs
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/msm_irqbalance_little_big.conf:system/vendor/etc/msm_irqbalance_little_big.conf
+    $(LOCAL_PATH)/configs/msm_irqbalance_little_big.conf:system/vendor/etc/msm_irqbalance_little_big.conf \
+    $(LOCAL_PATH)/configs/perf-profile0.conf:system/vendor/etc/perf-profile0.conf
 
 # IRSC
 PRODUCT_COPY_FILES += \
